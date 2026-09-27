@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #fff8f5;
+  --color-surface-dim: #e2d8d2;
+  --color-surface-bright: #fff8f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fcf2eb;
+  --color-surface-container: #f6ece6;
+  --color-surface-container-high: #f0e6e0;
+  --color-surface-container-highest: #eae1da;
+  --color-on-surface: #1f1b17;
+  --color-on-surface-variant: #3f493f;
+  --color-inverse-surface: #342f2b;
+  --color-inverse-on-surface: #f9efe8;
+  --color-outline: #6f7a6e;
+  --color-outline-variant: #becabc;
+  --color-surface-tint: #006d30;
+  --color-primary: #00652c;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #15803d;
+  --color-on-primary-container: #d3ffd5;
+  --color-inverse-primary: #79db8d;
+  --color-secondary: #55633d;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #d9e9b9;
+  --color-on-secondary-container: #5b6943;
+  --color-tertiary: #7b4d00;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #9c6300;
+  --color-on-tertiary-container: #fff2e7;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #95f8a7;
+  --color-primary-fixed-dim: #79db8d;
+  --color-on-primary-fixed: #00210a;
+  --color-on-primary-fixed-variant: #005323;
+  --color-secondary-fixed: #d9e9b9;
+  --color-secondary-fixed-dim: #bdcc9e;
+  --color-on-secondary-fixed: #141f02;
+  --color-on-secondary-fixed-variant: #3e4b28;
+  --color-tertiary-fixed: #ffddb8;
+  --color-tertiary-fixed-dim: #ffb95f;
+  --color-on-tertiary-fixed: #2a1700;
+  --color-on-tertiary-fixed-variant: #653e00;
+  --color-background: #fff8f5;
+  --color-on-background: #1f1b17;
+  --color-surface-variant: #eae1da;
+
+  --spacing-margin: 1.25rem;
+  --spacing-gutter: 1rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+
+  --font-display-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-md: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-sm: 'Plus Jakarta Sans', sans-serif;
+  --font-body-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-body-md: 'Plus Jakarta Sans', sans-serif;
+  --font-body-sm: 'Plus Jakarta Sans', sans-serif;
+  --font-label-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-label-md: 'Plus Jakarta Sans', sans-serif;
+  --font-label-sm: 'Plus Jakarta Sans', sans-serif;
+  --font-metric-lg: 'Plus Jakarta Sans', sans-serif;
+}
+
+@layer utilities {
+  .font-headline-lg { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .font-headline-md { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .font-headline-sm { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .font-body-lg { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .font-body-md { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .font-body-sm { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .font-label-lg { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .font-label-md { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .font-label-sm { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .font-metric-lg { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+  .text-display-lg { font-size: 36px; line-height: 44px; font-weight: 800; }
+  .text-headline-lg { font-size: 28px; line-height: 36px; font-weight: 700; }
+  .text-headline-md { font-size: 22px; line-height: 30px; font-weight: 700; }
+  .text-headline-sm { font-size: 18px; line-height: 26px; font-weight: 600; }
+  .text-body-lg { font-size: 16px; line-height: 24px; font-weight: 400; }
+  .text-body-md { font-size: 14px; line-height: 20px; font-weight: 400; }
+  .text-body-sm { font-size: 12px; line-height: 18px; font-weight: 400; }
+  .text-label-lg { font-size: 14px; line-height: 20px; font-weight: 600; }
+  .text-label-md { font-size: 12px; line-height: 16px; font-weight: 600; }
+  .text-label-sm { font-size: 10px; line-height: 14px; font-weight: 700; }
+  .text-metric-lg { font-size: 32px; line-height: 38px; font-weight: 800; }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}

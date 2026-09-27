@@ -1,0 +1,7 @@
+{
+  "name": "BiteExpiry - AI Pantry & Zero-Waste Tracker",
+  "description": "Smart pantry tracking with AI camera scanning, zero-waste rescue recipes, expiry predictions, and environmental impact scorecard.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
